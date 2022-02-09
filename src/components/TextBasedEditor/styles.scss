@@ -1,0 +1,54 @@
+.container {
+  margin: auto;
+  margin-top: 5rem;
+  width: 300px;
+}
+
+.m-2 {
+  margin: 2rem;
+  margin-left: 0;
+}
+
+.m-0 {
+  margin: 0.2rem;
+  margin-left: 0;
+}
+
+h1,
+input {
+  @extend .m-0;
+}
+
+
+
+.title {
+  outline: none;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: 800;
+  cursor: text;
+  @extend .m-2;
+}
+
+.heading {
+  outline: none;
+  border: none;
+  cursor: text;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.smart-input {
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+[data-placeholder]:empty::before {
+  content: attr(data-placeholder);
+  color: #757575;
+  cursor: text;
+}
